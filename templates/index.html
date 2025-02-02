@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Disease Detection</title>
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+    <!-- Link Home Page Specific CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+</head>
+<body>
+  <header>
+    <h1>Plant Disease Detection App</h1>
+  </header>
+
+  <nav>
+    <a href="">Home</a>
+    <a href="about">About</a>
+    <a href="contact">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <h2>Upload an Image for Disease Detection</h2>
+    <form action="/upload/" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <label for="image">Choose a plant image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+      <button type="submit">Detect Disease</button>
+    </form>
+  </div>
+</body>
+</html>

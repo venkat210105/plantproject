@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <h1>About Us</h1>
+            <p>
+                Welcome to our About page! We are a team of passionate developers committed to creating innovative
+                solutions. Our goal is to make the world a better place through technology.
+            </p>
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to build user-friendly applications that solve real-world problems. We believe in the power
+                of technology to transform lives and make everyday tasks easier for everyone.
+            </p>
+
+            <h2>Our Vision</h2>
+            <p>
+                We aim to be at the forefront of technological innovation, constantly pushing boundaries and staying ahead
+                of trends. Our vision is to empower people by providing them with tools that simplify their lives.
+            </p>
+
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div><strong>Email:</strong> contact@ourcompany.com</div>
+                <div><strong>Phone:</strong> (123) 456-7890</div>
+                <div><strong>Address:</strong> 123 Main Street, City, Country</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Our Company. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
