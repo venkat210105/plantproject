@@ -3,6 +3,11 @@ from django.http import JsonResponse
 from .forms import ImageUploadForm
 from django.conf import settings
 import os
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to the Plant Disease Detection App!")
+
 
 def index(request):
     #return HttpResponse("V")
